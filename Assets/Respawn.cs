@@ -9,7 +9,7 @@ public class Respawn : MonoBehaviour
         if (Collision.gameObject.CompareTag("Enemy"))
         {
             Debug.Log("Collision detected with " + Collision.gameObject.name);
-            transform.position = new Vector3(0,0,0);
+            transform.position = new Vector2(0,0);
         }
     }
 }

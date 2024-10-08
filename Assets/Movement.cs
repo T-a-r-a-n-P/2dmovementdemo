@@ -11,6 +11,18 @@ public class Movement : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
     }
 
+    void Sprint()
+    {
+        if (Input.GetButtonDown("Sprint"))
+        {
+            moveSpeed = 10f;
+        }
+        if (Input.GetButtonUp("Sprint"))
+        {
+            moveSpeed = 5f;
+        }
+    }
+
     
     void Update()
     {
@@ -19,6 +31,9 @@ public class Movement : MonoBehaviour
 
        Vector2 moveDirection = new Vector2(moveInputX, moveInputY);
        moveDirection.Normalize();
+       
        rb2d.velocity = moveDirection * moveSpeed; 
+
+       Sprint();
     }
 }
