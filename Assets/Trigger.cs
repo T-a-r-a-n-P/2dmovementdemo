@@ -9,7 +9,6 @@ public class Trigger : MonoBehaviour
     {
             if(Collider.gameObject.CompareTag("Player"))
     {
-        Debug.Log("Trigger detected with " + Collider.gameObject.name);
         doorWall.SetActive(false);
     }
     }
@@ -17,7 +16,6 @@ public class Trigger : MonoBehaviour
     {
             if(Collider.gameObject.CompareTag("Player"))
     {
-        Debug.Log("Trigger ended with " + Collider.gameObject.name);
         doorWall.SetActive(true);
     }
     }
