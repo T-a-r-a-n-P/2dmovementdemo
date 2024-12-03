@@ -37,9 +37,6 @@ public class Movement : MonoBehaviour
        float moveInputX = Input.GetAxisRaw("Horizontal");
        float moveInputY = Input.GetAxisRaw("Vertical");
 
-       animator.SetFloat("Input X", moveInputX);
-       animator.SetFloat("Input Y", moveInputY);
-
        Vector2 moveDirection = new Vector2(moveInputX, moveInputY);
        moveDirection.Normalize();
        

@@ -7,7 +7,13 @@ public class bulletDespawn : MonoBehaviour
 {
     void OnCollisionEnter2D(Collision2D Collision)
     {
-    
-        Destroy(gameObject);
+        if (Collision.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(gameObject);
+        }
+        if (Collision.gameObject.CompareTag("Untagged"))
+        {
+            Destroy(gameObject);
+        }
     }
 }
