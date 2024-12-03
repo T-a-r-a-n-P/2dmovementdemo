@@ -35577,7 +35577,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  RUN_0: {fileID: 0}
 --- !u!50 &1435525302
 Rigidbody2D:
   serializedVersion: 4
@@ -36023,7 +36022,7 @@ Transform:
   m_GameObject: {fileID: 2085554309}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.342274, y: -0.67814803, z: 0}
+  m_LocalPosition: {x: -10.49, y: 2.07, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
