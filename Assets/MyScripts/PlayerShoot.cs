@@ -13,7 +13,7 @@ public class PlayerShoot : MonoBehaviour
     {
         RotateBulletSpawnPointTowardsMouse();
 
-        if (Input.GetButton("Fire1"))
+        if (Input.GetButtonDown("Fire1"))
         {
             Shoot();
         }

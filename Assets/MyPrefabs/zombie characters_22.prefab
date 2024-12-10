@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7566676420513450899}
   - component: {fileID: 6133310848767524800}
-  - component: {fileID: 8904501548763077114}
   - component: {fileID: 7373366959118216734}
   - component: {fileID: 2198242068097076256}
   - component: {fileID: 4583116195021513935}
+  - component: {fileID: 6385992762532257407}
   m_Layer: 0
   m_Name: zombie characters_22
   m_TagString: Untagged
@@ -88,20 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8904501548763077114
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6971369828496194528}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47a98519edcdd44f199f4ea9f2bf33fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  followTarget: {fileID: 0}
-  smoothTime: 7
 --- !u!61 &7373366959118216734
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -134,7 +120,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.023808718, y: -0.028605893}
+  m_Offset: {x: -0.023808718, y: -0.008361772}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -145,7 +131,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5904832, y: 0.94278824}
+  m_Size: {x: 0.5904832, y: 0.9023}
   m_EdgeRadius: 0
 --- !u!50 &2198242068097076256
 Rigidbody2D:
@@ -186,3 +172,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 035abb49b9451478faf4d3d894de7080, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!195 &6385992762532257407
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6971369828496194528}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.49999997
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.99999994
+  m_BaseOffset: 0.49999997
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
