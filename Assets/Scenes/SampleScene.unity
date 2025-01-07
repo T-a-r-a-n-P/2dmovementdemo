@@ -225,7 +225,7 @@ GameObject:
   m_Component:
   - component: {fileID: 218626199}
   m_Layer: 0
-  m_Name: Waypoint (5)
+  m_Name: 1Waypoint (5)
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -389,7 +389,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3150354358061333458, guid: 9c0fd57ea17364348a946f44cd170d49, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3150354358061333458, guid: 9c0fd57ea17364348a946f44cd170d49, type: 3}
       propertyPath: m_LocalRotation.w
@@ -610,7 +610,7 @@ GameObject:
   m_Component:
   - component: {fileID: 540612446}
   m_Layer: 0
-  m_Name: Waypoint (6)
+  m_Name: 1Waypoint (6)
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -26095,7 +26095,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3150354358061333458, guid: 9c0fd57ea17364348a946f44cd170d49, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3150354358061333458, guid: 9c0fd57ea17364348a946f44cd170d49, type: 3}
       propertyPath: m_LocalRotation.w
@@ -36263,7 +36263,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3150354358061333458, guid: 9c0fd57ea17364348a946f44cd170d49, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3150354358061333458, guid: 9c0fd57ea17364348a946f44cd170d49, type: 3}
       propertyPath: m_LocalRotation.w
@@ -36508,7 +36508,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1362472533}
   m_Layer: 0
-  m_Name: Waypoint (7)
+  m_Name: 1Waypoint (7)
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -36543,7 +36543,6 @@ GameObject:
   - component: {fileID: 1435525303}
   - component: {fileID: 1435525302}
   - component: {fileID: 1435525301}
-  - component: {fileID: 1435525300}
   - component: {fileID: 1435525299}
   m_Layer: 0
   m_Name: Player
@@ -36568,18 +36567,6 @@ MonoBehaviour:
   firePointRotation: {fileID: 1822923320}
   bulletSpawnPoint: {fileID: 1292876635}
   bulletSpeed: 20
---- !u!114 &1435525300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1435525298}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6cacdb0750a34af7a2afa36ad9eac8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1435525301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36847,7 +36834,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3150354358061333458, guid: 9c0fd57ea17364348a946f44cd170d49, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3150354358061333458, guid: 9c0fd57ea17364348a946f44cd170d49, type: 3}
       propertyPath: m_LocalRotation.w
@@ -36927,7 +36914,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1694931963}
   m_Layer: 0
-  m_Name: Waypoint (8)
+  m_Name: 1Waypoint (8)
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -37187,7 +37174,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3150354358061333458, guid: 9c0fd57ea17364348a946f44cd170d49, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3150354358061333458, guid: 9c0fd57ea17364348a946f44cd170d49, type: 3}
       propertyPath: m_LocalRotation.w
@@ -40698,7 +40685,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3150354358061333458, guid: 9c0fd57ea17364348a946f44cd170d49, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3150354358061333458, guid: 9c0fd57ea17364348a946f44cd170d49, type: 3}
       propertyPath: m_LocalRotation.w

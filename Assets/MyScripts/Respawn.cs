@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Respawn : MonoBehaviour
 {
+
     void OnCollisionEnter2D(Collision2D Collision)
     {
         if (Collision.gameObject.CompareTag("Enemy"))

@@ -12,11 +12,12 @@ GameObject:
   - component: {fileID: 6133310848767524800}
   - component: {fileID: 7373366959118216734}
   - component: {fileID: 2198242068097076256}
-  - component: {fileID: 4583116195021513935}
   - component: {fileID: 6385992762532257407}
+  - component: {fileID: 6779416936914515133}
+  - component: {fileID: -6189997477876273540}
   m_Layer: 0
   m_Name: zombie characters_22
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -160,18 +161,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &4583116195021513935
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6971369828496194528}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 035abb49b9451478faf4d3d894de7080, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!195 &6385992762532257407
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -194,3 +183,28 @@ NavMeshAgent:
   m_BaseOffset: 0.49999997
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &6779416936914515133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6971369828496194528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e41a5dbb95e44e5ab57fcb8e87a489d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 75
+--- !u!114 &-6189997477876273540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6971369828496194528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a184ff57325f4837a20be8df1b70bf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
