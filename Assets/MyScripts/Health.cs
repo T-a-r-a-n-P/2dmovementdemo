@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
 
 public class Health : MonoBehaviour
@@ -11,8 +12,10 @@ public class Health : MonoBehaviour
     {
         currentHealth = maxHealth;
     }
-
-    // Update is called once per frame
+    void Update()
+    {
+        LowHealth();
+    }
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
@@ -21,10 +24,19 @@ public class Health : MonoBehaviour
         {
             Die();
         }
+        Debug.Log("<b>Enemy</b> <i>took</i> " + damage + " <b><color=black>damage</color></b>");
+    }
+    public void LowHealth()
+    {
+        if (currentHealth < maxHealth/4)
+        {
+            Debug.LogWarning("<color=red><b>Enemy is on low health</b></color>");
+        }
     }
 
     void Die()
     {
         Destroy(gameObject);
+        Debug.Log("<color=red><b>Enemy has died in </b></color>" + Time.time + " seconds");
     }
 }

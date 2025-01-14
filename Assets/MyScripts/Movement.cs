@@ -11,12 +11,14 @@ public class Movement : MonoBehaviour
     SpriteRenderer spriteRenderer;
     public float moveSpeed = 5f;
     bool isMoving = false;
+    public string Name = "Player";
     
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer= GetComponent<SpriteRenderer>();
+        Debug.Log("<color=green><i>GameObject's name : </i></color>" + Name);
     }
 
     void Sprint()
@@ -62,5 +64,6 @@ public class Movement : MonoBehaviour
        }
 
        Sprint();
+       Debug.Log("Player velocity: "+ rb2d.velocity);
     }
 }

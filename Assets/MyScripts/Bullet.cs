@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class bulletDespawn : MonoBehaviour
+public class bullet : MonoBehaviour
 {
     public int damage;
 
