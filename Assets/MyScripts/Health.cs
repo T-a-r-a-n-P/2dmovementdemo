@@ -36,7 +36,18 @@ public class Health : MonoBehaviour
 
     void Die()
     {
+        EndlessSpawner.enemiesAlive -= 1;
+
         Destroy(gameObject);
         Debug.Log("<color=red><b>Enemy has died in </b></color>" + Time.time + " seconds");
+        
+        if (enemiesAlive == 1)
+        {
+            Debug.Log(enemiesAlive + " enemy alive");
+        }
+        else
+        {
+            Debug.Log(enemiesAlive + " enemies alive");
+        }
     }
 }
