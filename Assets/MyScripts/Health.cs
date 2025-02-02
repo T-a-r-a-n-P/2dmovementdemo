@@ -5,12 +5,14 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
+    public EndlessSpawner endlessSpawner;
     public int maxHealth;
     int currentHealth;
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
+        endlessSpawner = GameObject.FindObjectOfType<EndlessSpawner> ();
     }
     void Update()
     {
@@ -36,18 +38,18 @@ public class Health : MonoBehaviour
 
     void Die()
     {
-        EndlessSpawner.enemiesAlive -= 1;
+        endlessSpawner.enemiesAlive -= 1;
 
         Destroy(gameObject);
         Debug.Log("<color=red><b>Enemy has died in </b></color>" + Time.time + " seconds");
         
-        if (enemiesAlive == 1)
+        if (endlessSpawner.enemiesAlive == 1)
         {
-            Debug.Log(enemiesAlive + " enemy alive");
+            Debug.Log(endlessSpawner.enemiesAlive + " enemy alive");
         }
         else
         {
-            Debug.Log(enemiesAlive + " enemies alive");
+            Debug.Log(endlessSpawner.enemiesAlive + " enemies alive");
         }
     }
 }
