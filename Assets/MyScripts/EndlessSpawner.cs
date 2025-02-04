@@ -9,7 +9,7 @@ public class EndlessSpawner : MonoBehaviour
     public float spawnInterval;
     public float minimumSpawnInterval;
     public float intervalDecrease;
-    static int enemiesAlive = 0;
+    static public int enemiesAlive = 0;
 
     private void Start()
     {
