@@ -11,6 +11,10 @@ public class PlayerShoot : MonoBehaviour
     public float bulletSpeed = 20f;
     void Update()
     {
+        if (UImanager.isPaused)
+        {
+            return;
+        }
         RotateBulletSpawnPointTowardsMouse();
 
         if (Input.GetButtonDown("Fire1"))

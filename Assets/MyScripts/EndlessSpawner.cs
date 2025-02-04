@@ -9,38 +9,42 @@ public class EndlessSpawner : MonoBehaviour
     public float spawnInterval;
     public float minimumSpawnInterval;
     public float intervalDecrease;
+<<<<<<< HEAD
     static public int enemiesAlive = 0;
+=======
+    public int enemiesAlive;
+>>>>>>> 4de2797439dabd0a131961969bed38577b6ff1e7
 
-    private void Start()
+    private void Update()
     {
         StartCoroutine(SpawnEnemies());
     }
     IEnumerator SpawnEnemies()
     {
-        while (enemiesAlive < 10)
+        if (enemiesAlive < 1)
         {
-            if (objectToSpawn != null && spawnPoint != null)
+            while (enemiesAlive < 10)
             {
-                Instantiate(objectToSpawn, spawnPoint.position, spawnPoint.rotation);
-                enemiesAlive += 1;
-                if (enemiesAlive == 1)
+                if (objectToSpawn != null && spawnPoint != null)
                 {
-                    Debug.Log(enemiesAlive + " enemy alive");
+                    Instantiate(objectToSpawn, spawnPoint.position, spawnPoint.rotation);
+                    enemiesAlive += 1;
+                    if (enemiesAlive == 1)
+                    {
+                        Debug.Log(enemiesAlive + " enemy alive");
+                    }
+                    else
+                    {
+                        Debug.Log(enemiesAlive + " enemies alive");
+                    }
                 }
                 else
                 {
-                    Debug.Log(enemiesAlive + " enemies alive");
+                    Debug.LogWarning("Object to spawn point is not set.");
                 }
+                yield return new WaitForSeconds(spawnInterval);
+                spawnInterval = Mathf.Max(minimumSpawnInterval, spawnInterval - intervalDecrease);
             }
-            else
-            {
-                Debug.LogWarning("Object to spawn point is not set.");
-            }
-
-            yield return new WaitForSeconds(spawnInterval);
-
-            spawnInterval = Mathf.Max(minimumSpawnInterval, spawnInterval - intervalDecrease);
-
         }
     }
 }
