@@ -9,6 +9,18 @@ public class PlayerShoot : MonoBehaviour
     public Transform firePointRotation;
     public Transform bulletSpawnPoint;
     public float bulletSpeed = 20f;
+
+    AudioSource audioSource;
+    public AudioClip attackSound;
+
+    [Header("Timer Variables")]
+    float lastTimeShot;
+
+    private void start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     void Update()
     {
         if (UImanager.isPaused)
@@ -37,6 +49,8 @@ public class PlayerShoot : MonoBehaviour
     }
     void Shoot()
     {
+        lastTimeShot = Time.time;
+
         GameObject bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, firePointRotation.rotation);
 
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
@@ -44,5 +58,7 @@ public class PlayerShoot : MonoBehaviour
         rb.velocity = firePointRotation.right * bulletSpeed;
 
         Destroy(bullet, 5f);
+
+        audioSource.PlayOneShot(attackSound);
     }
 }
