@@ -41450,7 +41450,12 @@ GameObject:
   - component: {fileID: 1435525299}
   - component: {fileID: 1435525308}
   - component: {fileID: 1435525307}
+<<<<<<< HEAD
   m_Layer: 3
+=======
+  - component: {fileID: 1435525308}
+  m_Layer: 0
+>>>>>>> 0683d36e5aee459ef7e26ed2eb6bbd19e965e7e5
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -41675,7 +41680,11 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
+<<<<<<< HEAD
   m_PlayOnAwake: 0
+=======
+  m_PlayOnAwake: 1
+>>>>>>> 0683d36e5aee459ef7e26ed2eb6bbd19e965e7e5
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
