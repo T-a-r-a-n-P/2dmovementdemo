@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 1675823502439824901}
   - component: {fileID: 8353776018245326572}
   - component: {fileID: 3113765475607667598}
+  - component: {fileID: -3760965734291989251}
+  - component: {fileID: 1696100879213075133}
+  - component: {fileID: 7565703158825592487}
   m_Layer: 0
   m_Name: zombie 1
   m_TagString: Untagged
@@ -106,3 +109,42 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-3760965734291989251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7103605516869223156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a184ff57325f4837a20be8df1b70bf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1696100879213075133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7103605516869223156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e41a5dbb95e44e5ab57fcb8e87a489d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endlessSpawner: {fileID: 0}
+  maxHealth: 100
+--- !u!114 &7565703158825592487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7103605516869223156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 363583a51899e4379987e0923665f7af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 35
