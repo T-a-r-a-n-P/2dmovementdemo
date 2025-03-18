@@ -5,12 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuManager : MonoBehaviour
 {
+    public AudioSource myAudio;
     public GameObject optionsMenuUI;
     public GameObject mainMenuUI;
 
     public void Start()
     {
         optionsMenuUI.SetActive(false);
+        myAudio = GetComponent<AudioSource>();
     }
 
     public void LoadScene(string sceneName)
@@ -35,5 +37,22 @@ public class MainMenuManager : MonoBehaviour
     {
         optionsMenuUI.SetActive(false);
         mainMenuUI.SetActive(true);
+    }
+
+    public void maxVol()
+    {
+        myAudio.volume = 1.0f;
+    }
+    public void Vol2()
+    {
+        myAudio.volume = 0.66f;
+    }
+    public void Vol3()
+    {
+        myAudio.volume = 0.33f;
+    }
+    public void minVol()
+    {
+        myAudio.volume = 0.0f;
     }
 }
