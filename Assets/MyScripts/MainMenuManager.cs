@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuManager : MonoBehaviour
 {
+    public AudioSource myAudio;
     public GameObject optionsMenuUI;
     public GameObject mainMenuUI;
 
@@ -35,5 +36,21 @@ public class MainMenuManager : MonoBehaviour
     {
         optionsMenuUI.SetActive(false);
         mainMenuUI.SetActive(true);
+    }
+    public void maxVol()
+    {
+        myAudio.volume = 1.0f;
+    }
+    public void vol2()
+    {
+        myAudio.volume = 0.66f;
+    }
+    public void vol3()
+    {
+        myAudio.volume = 0.33f;
+    }
+    public void minVol()
+    {
+        myAudio.volume = 0.0f;
     }
 }
