@@ -9,11 +9,13 @@ public class PlayerHealth : MonoBehaviour
     public float currentHealth;
 
     public HUDmanager HUD;
+    public GameObject gameover;
 
     void Start()
     {
         currentHealth = maxHealth;
         HUD.UpdateHealthBar(currentHealth);
+        gameover.SetActive(false);
     }
 
     public void TakeDamage(float damageAmount)
@@ -29,6 +31,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void Die()
     {
+        gameover.SetActive(true);
         Destroy(gameObject);
     }
 

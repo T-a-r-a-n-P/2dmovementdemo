@@ -8,6 +8,7 @@ public class Health : MonoBehaviour
     public EndlessSpawner endlessSpawner;
     public int maxHealth;
     int currentHealth;
+    int enemieskilled;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +40,7 @@ public class Health : MonoBehaviour
     void Die()
     {
         endlessSpawner.enemiesAlive -= 1;
+        enemieskilled += 1;
 
         Destroy(gameObject);
         Debug.Log("<color=red><b>Enemy has died in </b></color>" + Time.time + " seconds");

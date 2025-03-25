@@ -1460,7 +1460,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
+  m_ChunkCullingBounds: {x: 0.03333336, y: 0.03333336, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -43242,7 +43242,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
+  m_ChunkCullingBounds: {x: 0.03333336, y: 0.03333336, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -47219,15 +47219,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1675823502439824901, guid: a95a835fa5c644105a695d400aa699d9, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1675823502439824901, guid: a95a835fa5c644105a695d400aa699d9, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1675823502439824901, guid: a95a835fa5c644105a695d400aa699d9, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1675823502439824901, guid: a95a835fa5c644105a695d400aa699d9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -47262,6 +47262,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 003_walking_0
       objectReference: {fileID: 0}
+    - target: {fileID: 3842019776331897091, guid: 157f7a576bdf84abb84a1653c4f68f91, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1435525298}
     - target: {fileID: 7782930507030978688, guid: 157f7a576bdf84abb84a1653c4f68f91, type: 3}
       propertyPath: m_LocalPosition.x
       value: -99.78734
